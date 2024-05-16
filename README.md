@@ -30,13 +30,16 @@ A project developed during the [Maratona Discover #1](https://www.youtube.com/pl
 
 ## ⚙️ Getting Started
 
-- Clone this repository, navigate into the folder and open with your IDE:
-
+- Clone this repository:
 ```bash
 git clone https://github.com/olivpeter/devfinances.git
-
+```
+- Navigate into the folder
+```bash
 cd devfinances
-
+```
+- Open with your IDE:
+```bash
 code .
 ```
 
@@ -55,5 +58,7 @@ code .
 - Create your branch with this pattern: `git checkout -b feat/<your-feat>`
 - Commit your changes with conventional commits: `feat: Add my feature`
 - Push to your branch: `git push origin feat/<your-feat>`
+- Open new Pull Request
+- Wait merge to delete your branch: `git branch -D feat/<your-feat>`
 
 ![](./assests/img/og_Image_1200x630.jpg)
