@@ -8,7 +8,7 @@
 
 ## 💻 About
 
-A project developed during the Maratona Discover #1 by [Rocketseat](https://www.rocketseat.com.br/). The event took place between January 21st and 24th, 2021. This project is a responsive finance system designed initially to simplify daily finances.
+A project developed during the [Maratona Discover #1](https://www.youtube.com/playlist?list=PLeLKux5eT3kY2mvZUi7IM5T548vfKxGq5) by [Rocketseat](https://www.rocketseat.com.br/). The event took place between January 21st and 24th, 2021. This project is a responsive finance system designed initially to simplify daily finances.
 
 |                                                          🔖 Layout Here                                                           |         🤳🏻 See in Action         |
 | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: |
@@ -47,7 +47,13 @@ code .
 
 - You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file.
 - You can find style sheets files in `main.scss` and partials in `./partials`
+- Don't forget to import your partials at `main.scss`: `@import "./partials/yourPartial"`
 
 ### 🤝 Contributing
+
+- Fork this repo
+- Create your branch with this pattern: `git checkout -b feat/<your-feat>`
+- Commit your changes with conventional commits: `feat: Add my feature`
+- Push to your branch: `git push origin feat/<your-feat>`
 
 ![](./assests/img/og_Image_1200x630.jpg)
