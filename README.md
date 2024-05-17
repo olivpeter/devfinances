@@ -28,6 +28,10 @@ A project developed during the [Maratona Discover #1](https://www.youtube.com/pl
 | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) | ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 
+## 📦 Libs
+
+- [Phosporh icons](https://phosphoricons.com/)
+
 ## ⚙️ Getting Started
 
 - Clone this repository, navigate into the folder and open with your IDE:
@@ -45,8 +49,8 @@ code .
 - Install and run [`Live Server Extension`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Install and run [`Live Sass Compiler`](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
-- You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file.
-- You can find style sheets files in `main.scss` and partials in `./partials`
+- You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file
+- You can find style sheets files in `main.scss` and partials in `scss` folder
 - Don't forget to import your partials at `main.scss`: `@import "./partials/yourPartial"`
 
 ### 🤝 Contributing

@@ -1,0 +1,49 @@
+main {
+    margin-top: -8rem;
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.2rem;
+        .financeCard {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            background: $white;
+            padding: 2.4rem 3.2rem;
+            border-radius: $border-radius-medium;
+            transition: 0.3s ease;
+            &:hover {
+                box-shadow: $box-shadow-xl;
+            }
+
+            .financeCardHeader {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                small {
+                    font-size: 1.4rem;
+                    color: $text-heading;
+                }
+
+                i {
+                    font-size: 3.2rem;
+                    &.income {
+                        color: $green;
+                    }
+                    &.expanses {
+                        color: $red;
+                    }
+                }
+            }
+
+            .financeCardValue {
+                h2 {
+                    font-size: 3.2rem;
+                    font-weight: 600;
+                    color: $text-heading;
+                }
+            }
+        }
+    }
+}

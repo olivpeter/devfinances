@@ -40,10 +40,6 @@ span {
     display: block;
 }
 
-button {
-    cursor: pointer;
-}
-
 input,
 button,
 textarea,
@@ -55,9 +51,37 @@ select {
     display: block;
 }
 
+button {
+    cursor: pointer;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: $border-radius-medium;
+
+    &.btn-primary {
+        background: $green;
+        color: $white;
+        &:hover {
+            background: $green-light;
+        }
+    }
+}
+
 .gridWrapper {
     width: 100%;
     max-width: 115.2rem;
     padding: 0 1.6rem;
     margin: 0 auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }

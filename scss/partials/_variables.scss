@@ -1,0 +1,39 @@
+// COLORS
+$text-heading: #363f5f;
+$text-paragraph: #969cb2;
+
+$green: #49aa26;
+$green-light: #62da37;
+$green-dark: #2d4a22;
+
+$red: #e92929;
+$red-light: #ff3a3a;
+$red-dark: #cc1d1d;
+
+$background: #f0f2f5;
+
+$white: #fff;
+
+// BORDER RADIUS
+$border-radius-small: 0.4rem;
+$border-radius-medium: 0.6rem;
+$border-radius-large: 0.8rem;
+$border-radius-full: 50%;
+
+// BREAKPOINTS
+$layout-breakpoint-mobile: 480px;
+$layout-breakpoint-tablet: 768px;
+$layout-breakpoint-desktop: 1024px;
+
+// BOX SHADOW
+$box-shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$box-shadow-medium:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+$box-shadow-large:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+$box-shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+$box-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
