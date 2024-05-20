@@ -65,6 +65,19 @@ button {
             background: $green-light;
         }
     }
+
+    &.btn-secondary {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        background: $background;
+        color: $green;
+        border: 1px solid $green;
+        &:hover {
+            background: $green;
+            color: $white;
+        }
+    }
 }
 
 .gridWrapper {
