@@ -19,5 +19,63 @@
                 }
             }
         }
+
+        .transations-container {
+            margin-top: 2.4rem;
+
+            h2 {
+                font-size: 2.4rem;
+                color: $text-heading;
+                font-weight: 500;
+            }
+
+            table {
+                width: 100%;
+                border-spacing: 0 0.8rem;
+
+                th {
+                    color: $text-paragraph;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    padding: 1.6rem 3.2rem;
+                    text-align: left;
+                    line-height: 1.5;
+                    background: $white;
+                    &:first-child {
+                        border-radius: $border-radius-medium 0 0 $border-radius-medium;
+                    }
+                    &:last-child {
+                        border-radius: 0 $border-radius-medium $border-radius-medium 0;
+                    }
+                }
+
+                td {
+                    background: $white;
+                    padding: 2rem 3.2rem;
+                    font-size: 1.6rem;
+                    color: $text-heading;
+                    &:first-child {
+                        border-radius: $border-radius-medium 0 0 $border-radius-medium;
+                    }
+                    &:last-child {
+                        border-radius: 0 $border-radius-medium $border-radius-medium 0;
+                    }
+                    &.income {
+                        color: $green;
+                    }
+                    &.expanse {
+                        color: $red;
+                    }
+                }
+
+                tr {
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
