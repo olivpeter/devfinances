@@ -16,12 +16,12 @@ A project developed during the [Maratona Discover #1](https://www.youtube.com/pl
 
 ## 🔥 Functionalities
 
-- [ ] Responsive layout
-- [ ] Add and delete new finances in table
-- [ ] Save your data in local storage
-- [ ] Show total of incomes
-- [ ] Show total of expanses
-- [ ] Show your balance
+-   [ ] Responsive layout
+-   [ ] Add and delete new finances in table
+-   [ ] Save your data in local storage
+-   [ ] Show total of incomes
+-   [ ] Show total of expanses
+-   [ ] Show your balance
 
 ## 🔨 Technologies
 
@@ -30,39 +30,46 @@ A project developed during the [Maratona Discover #1](https://www.youtube.com/pl
 
 ## 📦 Libs
 
-- [Phosporh icons](https://phosphoricons.com/)
+-   [Phosporh icons](https://phosphoricons.com/)
 
 ## ⚙️ Getting Started
 
-- Clone this repository:
+-   Clone this repository:
+
 ```bash
 git clone https://github.com/olivpeter/devfinances.git
 ```
-- Navigate into the folder
+
+-   Navigate into the folder
+
 ```bash
 cd devfinances
 ```
-- Open with your IDE:
+
+-   Open with your IDE:
+
 ```bash
 code .
 ```
 
-### ⚠️ Requirements
+### ⚠️ Requirements and Instructions
 
-- Install and run [`Live Server Extension`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- Install and run [`Live Sass Compiler`](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+-   Install and run [`Live Server Extension`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+-   Install and run [`Live Sass Compiler`](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
-- You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file
-- You can find style sheets files in `main.scss` and partials in `scss` folder
-- Don't forget to import your partials at `main.scss`: `@import "./partials/yourPartial"`
+-   You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file
+-   You can find style sheets files in `main.scss` and partials in `scss` folder
+-   SCSS variables can be found in `scss/_variables.scss`
+-   Don't forget to import your partials at `main.scss`: `@import "./partials/yourPartial"`
+-   You can find main JavaScript file at `app.js` in `js` folder
 
 ### 🤝 Contributing
 
-- Fork this repo
-- Create your branch with this pattern: `git checkout -b feat/<your-feat>`
-- Commit your changes with conventional commits: `feat: Add my feature`
-- Push to your branch: `git push origin feat/<your-feat>`
-- Open new Pull Request
-- Wait merge to delete your branch: `git branch -D feat/<your-feat>`
+-   Fork this repo
+-   Create your branch with this pattern: `git checkout -b feat/<your-feat>`
+-   Commit your changes with conventional commits: `feat: Add my feature`
+-   Push to your branch: `git push origin feat/<your-feat>`
+-   Open new Pull Request
+-   Wait merge to delete your branch: `git branch -D feat/<your-feat>`
 
 ![](./assests/img/og_Image_1200x630.jpg)
