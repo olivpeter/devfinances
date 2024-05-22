@@ -8,6 +8,26 @@
     align-items: center;
     justify-content: center;
     background: $black-modal;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+
+    &.openModal {
+        @keyframes slideUp {
+            from {
+                transform: translateY(8rem);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        visibility: visible;
+        opacity: 1;
+        & .modal {
+            animation: slideUp 0.3s ease forwards;
+        }
+    }
 
     .modal {
         background: $background;
