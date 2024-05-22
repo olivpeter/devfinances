@@ -63,3 +63,12 @@ main {
         }
     }
 }
+
+@media (max-width: $layout-breakpoint-tablet) {
+    main {
+        .gridWrapper {
+            grid-template-columns: 1fr;
+            gap: 1.6rem;
+        }
+    }
+}

@@ -79,17 +79,29 @@
 
                     td {
                         i {
+                            display: block;
                             font-size: 2.4rem;
+                            text-align: center;
                             padding: 0.8rem;
                             color: $red;
                             cursor: pointer;
                         }
-                        &:last-child {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $layout-breakpoint-tablet) {
+    #transations {
+        margin-top: 3.2rem;
+
+        .gridWrapper {
+            .transations-container {
+                table {
+                    display: block;
+                    overflow-x: scroll;
                 }
             }
         }

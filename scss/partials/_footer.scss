@@ -1,5 +1,5 @@
 footer {
-    margin-top: 6.4rem;
+    margin: 6.4rem 0;
 
     .gridWrapper {
         display: flex;
@@ -9,5 +9,11 @@ footer {
         img {
             max-width: 12.4rem;
         }
+    }
+}
+
+@media (max-width: $layout-breakpoint-tablet) {
+    footer {
+        margin: 3.2rem 0;
     }
 }
