@@ -16,6 +16,22 @@ main {
             &:hover {
                 box-shadow: $box-shadow-xl;
             }
+            &.balance {
+                background: $green;
+                color: $white;
+
+                .financeCardHeader {
+                    small {
+                        color: $white;
+                    }
+                }
+
+                .financeCardValue {
+                    h2 {
+                        color: $white;
+                    }
+                }
+            }
 
             .financeCardHeader {
                 display: flex;
