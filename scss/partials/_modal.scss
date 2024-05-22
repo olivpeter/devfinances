@@ -1,0 +1,63 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black-modal;
+
+    .modal {
+        background: $background;
+        padding: 3.2rem;
+        border-radius: $border-radius-medium;
+        width: min(60rem, 90%);
+        box-shadow: $box-shadow-xl;
+
+        h2 {
+            font-size: 2.4rem;
+            color: $text-heading;
+            font-weight: 500;
+            margin-bottom: 1.6rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .input-group {
+                flex: 1;
+                background: $white;
+                border-radius: $border-radius-small;
+                padding: 1.6rem;
+                &:has(input:focus) {
+                    box-shadow: $green 0 0 0 0.1rem;
+                }
+
+                input {
+                    width: 100%;
+                    font-size: 1.4rem;
+                    color: $text-heading;
+                    &::placeholder {
+                        color: $text-paragraph;
+                    }
+                }
+            }
+
+            .btns-group {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.6rem;
+                margin-top: 1.6rem;
+
+                button {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

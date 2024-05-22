@@ -61,21 +61,32 @@ button {
     &.btn-primary {
         background: $green;
         color: $white;
+        border: 0.1rem solid $green;
         &:hover {
             background: $green-light;
+            border: 0.1rem solid $green-light;
         }
     }
 
     &.btn-secondary {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 0.8rem;
         background: $background;
         color: $green;
-        border: 1px solid $green;
+        border: 0.1rem solid $green;
         &:hover {
             background: $green;
             color: $white;
+        }
+        &.danger {
+            color: $red;
+            border: 0.1rem solid $red;
+            &:hover {
+                background: $red;
+                color: $white;
+            }
         }
     }
 }
