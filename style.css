@@ -1,0 +1,29 @@
+/* CSS BASIC RESET */
+
+:root {
+    --background: #F0F2F5;
+    --full-white: #FFFFFF;
+    --full-black: #000000;
+    --primary: #49AA26;
+    --secondary: #2D4A22;
+    --text: #969CB2;
+    --title: #363F5F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
