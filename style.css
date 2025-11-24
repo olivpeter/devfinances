@@ -84,7 +84,7 @@ body {
             justify-content: space-between;
             align-items: center;
             font-size: 1.6rem;
-            font-weight: 300;
+            font-weight: 400;
             color: var(--text);
 
             & i {
@@ -104,6 +104,84 @@ body {
             font-size: 3.2rem;
             font-weight: 500;
             color: var(--title);
+        }
+    }
+}
+
+/* VALUES */
+
+.values_container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 6.4rem auto 0 auto;
+
+    & h2 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: var(--title);
+        margin-bottom: 1.6rem;
+    }
+
+    & table {
+        width: 100%;
+        border-spacing: 0 1.6rem;
+
+        & thead {
+            & tr {
+                & th {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: var(--text);
+                    padding: 0 2.4rem;
+
+                    &.table_header_description {
+                        text-align: left;
+                    }
+
+                    &.table_header_value {
+                        text-align: center;
+                    }
+
+                    &.table_header_date {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        & tbody {
+            & tr {
+                background-color: var(--full-white);
+
+                & td {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: var(--title);
+                    padding: 2.4rem;
+
+                    &.table_data_description {
+                        text-align: left;
+                        border-radius: 1.6rem 0 0 1.6rem;
+                    }
+
+                    &.table_data_value {
+                        text-align: center;
+
+                        &.entry {
+                            color: var(--primary);
+                        }
+
+                        &.exit {
+                            color: var(--danger);
+                        }
+                    }
+
+                    &.table_data_date {
+                        text-align: right;
+                        border-radius: 0 1.6rem 1.6rem 0;
+                    }
+                }
+            }
         }
     }
 }
