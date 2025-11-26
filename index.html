@@ -47,7 +47,7 @@
     <section class="values_container">
         <div class="values_header_container">
             <h2>Transações recentes</h2>
-            <button>
+            <button onclick="handleModalOpen()">
                 <i class="ph ph-plus"></i>
                 Adicionar
             </button>
@@ -61,37 +61,7 @@
                         <th class="table_header_date">Data</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="table_data_description">Salário</td>
-                        <td class="table_data_value entry">R$ 17.400,00</td>
-                        <td class="table_data_date">24/11/2025</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data_description">Aluguel</td>
-                        <td class="table_data_value exit">- R$ 1.259,00</td>
-                        <td class="table_data_date">24/11/2025</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data_description">Desenvolvimento de Site</td>
-                        <td class="table_data_value entry">R$ 5.000,00</td>
-                        <td class="table_data_date">21/11/2025</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data_description">Internet</td>
-                        <td class="table_data_value exit">- R$ 200,00</td>
-                        <td class="table_data_date">23/11/2025</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data_description">Supermercado</td>
-                        <td class="table_data_value exit">- R$ 800,00</td>
-                        <td class="table_data_date">20/11/2025</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data_description">Venda de App</td>
-                        <td class="table_data_value entry">R$ 2.500,00</td>
-                        <td class="table_data_date">15/11/2025</td>
-                    </tr>
+                <tbody id="transactionsTableBody">
                 </tbody>
             </table>
         </div>
@@ -100,6 +70,31 @@
     <footer class="footer_container">
         <p> &copy; Todos os direitos reservados | Projeto Maratona Discover Rocketseat |Desenvolvido por <a href="https://github.com/olivpeter" target="_blank" rel="noopener noreferrer">Pedro Oliveira</a></p>
     </footer>
+
+    <section id="modal">
+        <div class="modal_container">
+            <div class="modal_card">    
+                <h2>Adicionar Transação</h2>
+                <p>Use o sinal - (negativo) para saídas e , (vírgula) para centavos</p>
+            <form class="modal_form">
+                <input type="text" placeholder="Descrição">
+                <input type="number" placeholder="Valor">
+                <select name="" id="">
+                    <option value="">Entrada</option>
+                    <option value="">Saída</option>
+                </select>
+                <input type="date" placeholder="Data">
+                <div class="modal_form_buttons">
+                    <button type="button" class="add_transaction">
+                        Salvar
+                    </button>
+                    <button type="button" class="close_modal" onclick="handleModalOpen()">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
     
     <script src="script.js"></script>
 </body>
