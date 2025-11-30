@@ -219,6 +219,7 @@ body {
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
+    padding: 2.4rem;
     color: var(--text);
     font-size: 1.4rem;
     font-weight: 400;

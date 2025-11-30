@@ -77,15 +77,15 @@
                 <h2>Adicionar Transação</h2>
                 <p>Use o sinal - (negativo) para saídas e , (vírgula) para centavos</p>
             <form class="modal_form">
-                <input type="text" placeholder="Descrição">
-                <input type="number" placeholder="Valor">
-                <select name="" id="">
-                    <option value="">Entrada</option>
-                    <option value="">Saída</option>
+                <input type="text" id="description" placeholder="Descrição">
+                <input type="text" id="value" placeholder="Valor">
+                <select name="type" id="type">
+                    <option value="entry">Entrada</option>
+                    <option value="exit">Saída</option>
                 </select>
-                <input type="date" placeholder="Data">
+                <input type="date" id="date" placeholder="Data">
                 <div class="modal_form_buttons">
-                    <button type="button" class="add_transaction">
+                    <button type="submit" class="add_transaction">
                         Salvar
                     </button>
                     <button type="button" class="close_modal" onclick="handleModalOpen()">
@@ -96,6 +96,6 @@
         </div>
     </section>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
