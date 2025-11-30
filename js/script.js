@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
     const transaction = {
         id: transactions.length + 1,
         description,
-        value,
+        value: Number(value.replace(',', '.')),
         type,
         date
     }; 
@@ -25,10 +25,11 @@ form.addEventListener('submit', (event) => {
 
     transactions.forEach(transaction => {
         const tr = document.createElement('tr');
+
         tr.innerHTML = `
             <td class="table_data_description">${transaction.description}</td>
-            <td class="table_data_value ${transaction.type}">${transaction.value}</td>
-            <td class="table_data_date">${transaction.date}</td>
+            <td class="table_data_value ${transaction.type}">${formatValue(transaction.value)}</td>
+            <td class="table_data_date">${parseDate(transaction.date)}</td>
         `;
 
         transactionsBodyTable.appendChild(tr);
@@ -37,11 +38,3 @@ form.addEventListener('submit', (event) => {
     clearForm();
     handleModalOpen();
 });
-
-function handleModalOpen() {
-    modal.classList.toggle('openModal');
-}
-
-function clearForm() {
-    form.reset();
-}
