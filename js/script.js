@@ -2,26 +2,10 @@ const modal = document.getElementById('modal');
 const transactionsBodyTable = document.getElementById('transactionsTableBody');
 const form = document.querySelector('form');
 
-let transactions = [];
+let transactions = loadTransactions();
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const description = document.getElementById('description').value;
-    const value = document.getElementById('value').value;
-    const type = document.getElementById('type').value;
-    const date = document.getElementById('date').value;
-    
-    const transaction = {
-        id: transactions.length + 1,
-        description,
-        value: Number(value.replace(',', '.')),
-        type,
-        date
-    }; 
-
-    transactions.push(transaction);
-
-    transactionsBodyTable.innerHTML = ''
+function renderTransactions() {
+    transactionsBodyTable.innerHTML = '';
 
     transactions.forEach(transaction => {
         const tr = document.createElement('tr');
@@ -34,7 +18,29 @@ form.addEventListener('submit', (event) => {
 
         transactionsBodyTable.appendChild(tr);
     });
-    
+}
+
+renderTransactions();
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const description = document.getElementById('description').value;
+    const value = document.getElementById('value').value;
+    const type = document.getElementById('type').value;
+    const date = document.getElementById('date').value;
+
+    const transaction = {
+        id: transactions.length + 1,
+        description,
+        value: Number(value.replace(',', '.')),
+        type,
+        date
+    };
+
+    transactions.push(transaction);
+    saveTransactions();
+    renderTransactions();
+
     clearForm();
     handleModalOpen();
 });
