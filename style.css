@@ -395,3 +395,21 @@ body {
         }
     }
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .transactions_container,
+    .values_container {
+        padding: 0 1.5rem;
+    }
+
+    .transactions_card_container {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .value_table_container {
+        overflow-x: auto;
+    }
+}
