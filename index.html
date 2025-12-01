@@ -47,10 +47,16 @@
     <section class="values_container">
         <div class="values_header_container">
             <h2>Transações recentes</h2>
-            <button onclick="handleModalOpen()">
-                <i class="ph ph-plus"></i>
-                Adicionar
-            </button>
+            <div class="values_header_buttons">
+                <button onclick="handleModalOpen()">
+                    <i class="ph ph-plus"></i>
+                    Adicionar
+                </button>
+                <button onclick="handleClearData()">
+                    <i class="ph ph-trash"></i>
+                    Excluir dados
+                </button>
+            </div>
         </div>
         <div class="value_table_container">
             <table>

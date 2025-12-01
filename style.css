@@ -127,25 +127,53 @@ body {
             font-weight: 500;
             color: var(--title);
         }
-
-        & button {
+        .values_header_buttons {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0.8rem;
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: var(--full-white);
-            background-color: var(--primary);
-            border: none;
-            border-radius: 1rem;
-            padding: 1.6rem;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
+            gap: 1.6rem;
 
-            &:hover {
-                background-color: var(--secondary);
+            & button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--full-white);
+                background-color: var(--primary);
+                border: none;
+                border-radius: 1rem;
+                padding: 1.6rem;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+
+                &:hover {
+                    background-color: var(--secondary);
+                }
             }
+
+            & button:nth-child(2) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.8rem;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: var(--danger);
+                    background-color: transparent;
+                    border: 1px solid var(--danger)  ;
+                    border-radius: 1rem;
+                    padding: 1.6rem;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease;
+                    width: 100%;
+
+                    &:hover {
+                        background-color: var(--danger);
+                        color: var(--full-white);
+                    }
+                }
         }
     }
 

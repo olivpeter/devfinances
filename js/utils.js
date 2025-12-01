@@ -33,3 +33,9 @@ function loadTransactions() {
 function saveTransactions() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(transactions));
 }
+
+function handleClearData() {
+    localStorage.removeItem(STORAGE_KEY);
+    transactions = [];
+    renderTransactions();
+}
