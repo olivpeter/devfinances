@@ -8,7 +8,7 @@ function clearForm() {
 }
 
 function parseDate(date) {
-    return new Date(date).toLocaleDateString('pt-BR');
+    return date.split('-').reverse().join('/');
 }
 
 function formatValue(value) {
