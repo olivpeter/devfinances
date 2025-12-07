@@ -20,9 +20,11 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## ✨ Funcionalidades
 
-- **Visualização de Resumo**: Cards informativos com total de entradas, saídas e saldo total.
+- **Visualização de Resumo Dinâmica**: Cards informativos com atualização automática do total de entradas, saídas e saldo total.
 - **Listagem de Transações**: Tabela com o histórico das transações recentes.
+- **Persistência de Dados**: As transações são salvas no **LocalStorage** do navegador, mantendo os dados mesmo após recarregar a página.
 - **Adicionar Transação**: Modal para cadastro de novas transações com descrição, valor, tipo (entrada/saída) e data.
+- **Limpeza de Dados**: Funcionalidade para excluir todas as transações registradas.
 - **Responsividade**: Layout adaptável para diferentes tamanhos de tela.
 
 ## 🚀 Como executar
