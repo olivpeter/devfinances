@@ -18,6 +18,24 @@ function renderTransactions() {
 
         transactionsBodyTable.appendChild(tr);
     });
+
+    updateBalance();
+}
+
+function updateBalance() {
+    const incomeResult = transactions //
+        .filter(transaction => transaction.type === 'entry')
+        .reduce((acc, transaction) => acc + transaction.value, 0);
+
+    const expenseResult = transactions //
+        .filter(transaction => transaction.type === 'exit')
+        .reduce((acc, transaction) => acc + transaction.value, 0);
+
+    const totalResult = incomeResult + expenseResult;
+
+    document.getElementById('incomeDisplay').innerHTML = formatValue(incomeResult);
+    document.getElementById('expenseDisplay').innerHTML = formatValue(Math.abs(expenseResult));
+    document.getElementById('totalDisplay').innerHTML = formatValue(totalResult);
 }
 
 renderTransactions();
